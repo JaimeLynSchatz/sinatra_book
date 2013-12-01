@@ -20,7 +20,7 @@ get '/throw/:type' do
   end
 
   # now we can select a random throw for the computer
-  computer_throw = @throws.sample
+  computer_throw = :rock #@throws.sample
 
   # compare the player and computer throws to determine a winner
   if player_throw == computer_throw
